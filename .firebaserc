@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angularski": {
+      "hosting": {
+        "angularski": [
+          "angularski"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angularski"
+  }
+}
