@@ -1,14 +1,19 @@
 {
   "name": "angularski",
   "version": "0.0.0",
+  "engines": {
+    "node": "^20",
+    "npm": "^10"
+  },
   "scripts": {
     "ng": "node -r dotenv/config ./node_modules/.bin/ng",
     "start": "node -r dotenv/config ./node_modules/.bin/ng serve",
     "build": "node -r dotenv/config ./node_modules/.bin/ng build",
     "watch": "node -r dotenv/config ./node_modules/.bin/ng build --watch --configuration development",
-    "test": "node -r dotenv/config ./node_modules/.bin/ng test",
+    "test:unit": "node -r dotenv/config ./node_modules/.bin/ng test",
     "lint": "node -r dotenv/config ./node_modules/.bin/ng lint",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && firebase deploy",
+    "test:e2e": "npx playwright test"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +41,7 @@
     "@angular/cli": "^17.1.0",
     "@angular/compiler-cli": "^17.1.0",
     "@ngx-env/builder": "^17.1.1",
+    "@playwright/test": "^1.41.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.11.5",
     "@typescript-eslint/eslint-plugin": "6.18.0",
@@ -47,6 +53,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "playwright": "^1.41.1",
     "typescript": "~5.3.2"
   }
 }
