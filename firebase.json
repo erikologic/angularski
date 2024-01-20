@@ -2,8 +2,7 @@
   "hosting": [
     {
       "target": "angularski",
-      "source": ".",
-      "frameworksBackend": {}
+      "public": "dist/angularski/browser"
     }
   ]
 }

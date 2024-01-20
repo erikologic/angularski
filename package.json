@@ -7,7 +7,8 @@
     "build": "node -r dotenv/config ./node_modules/.bin/ng build",
     "watch": "node -r dotenv/config ./node_modules/.bin/ng build --watch --configuration development",
     "test": "node -r dotenv/config ./node_modules/.bin/ng test",
-    "lint": "node -r dotenv/config ./node_modules/.bin/ng lint"
+    "lint": "node -r dotenv/config ./node_modules/.bin/ng lint",
+    "deploy": "npm run build && firebase deploy"
   },
   "private": true,
   "dependencies": {
